@@ -1,0 +1,373 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wanchoxyz</title>
+
+<link rel="icon" href="https://media.discordapp.net/attachments/1381958281886695525/1395297250770423868/softshit_logo_grey.png?ex=6879ef53&is=68789dd3&hm=54570d9f55ce0bcf33da03f0821f15b11ccbc7fa725e37e81168bd0d558139ae&=&format=webp&quality=lossless&width=492&height=694" type="image/x-icon">
+
+<!-- Open Graph Meta Tags for Discord and Social Sharing -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="wanchoxyz.">
+  <meta property="og:description" content="all about softshit">
+  <meta property="og:image" content="https://media.discordapp.net/attachments/1378961559841280112/1395283074488602655/188561449.png?ex=6879e220&is=687890a0&hm=d83d94b8af08b9d09433ef4db3eaf1bbbb3fa91f9a696cf65834042fd78206c1&=&format=webp&quality=lossless">
+  <meta property="og:url" content="">
+  <meta name="theme-color" content="#990000">
+  
+
+  <!-- Font & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Share Tech Mono', monospace;
+      text-align: center;
+      padding: 30px 15px;
+      color: #fff;
+      background: url('https://i.postimg.cc/qvsn2dRZ/a-843054551667112e70b4aa76271732af.gif') no-repeat center center fixed;
+      background-size: cover;
+      animation: flickerBackground 3s infinite;
+    }
+
+    @keyframes flickerBackground {
+      0% { background-image: url('https://cdn.discordapp.com/attachments/1378961559841280112/1395300723033636874/Project_Name.gif?ex=6879f28f&is=6878a10f&hm=d8006f76f4aad1843f5bb9f6c0d518df073a2e6bd3515bd3acb6907fc9d7cf56&'); }
+      25% { background-image: url('https://cdn.discordapp.com/attachments/1381958281886695525/1395299232377733171/bg.gif?ex=6879f12c&is=68789fac&hm=b19dec3dd3134fdf4330ae98dcc76f77c4cafd6b1a7dda546da09471f2f40d7e&'); }
+      50% { background-image: url('https://cdn.discordapp.com/attachments/1378961559841280112/1395300723033636874/Project_Name.gif?ex=6879f28f&is=6878a10f&hm=d8006f76f4aad1843f5bb9f6c0d518df073a2e6bd3515bd3acb6907fc9d7cf56&'); }
+      75% { background-image: url('https://cdn.discordapp.com/attachments/1378961559841280112/1395300723033636874/Project_Name.gif?ex=6879f28f&is=6878a10f&hm=d8006f76f4aad1843f5bb9f6c0d518df073a2e6bd3515bd3acb6907fc9d7cf56&'); }
+      100% { background-image: url('https://cdn.discordapp.com/attachments/1378961559841280112/1395300723033636874/Project_Name.gif?ex=6879f28f&is=6878a10f&hm=d8006f76f4aad1843f5bb9f6c0d518df073a2e6bd3515bd3acb6907fc9d7cf56&'); }
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .overlay button {
+      background-color: #ff0000;
+      color: #000;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    img.profile {
+      max-width: 180px;
+      border-radius: 50%;
+      border: 3px solid #ff0000;
+      box-shadow: 0 0 15px #ff0000;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: #ff0000;
+      margin: 0;
+      text-shadow: 0 0 10px #ff0000;
+    }
+
+    .typing {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      color: #ccc;
+      min-height: 24px;
+    }
+
+    .btn {
+      background-color: #ff0000;
+      color: #000;
+      padding: 12px 24px;
+      margin: 15px 0;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background: #fff;
+      color: #ff0000;
+    }
+
+    .music-info {
+      margin: 20px 0;
+    }
+
+    .music-info img {
+      width: 60px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    .music-info span {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .socials {
+      margin: 30px 0 50px;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #ccc;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      color: #ff0000;
+    }
+
+    .servers {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      border-top: 1px solid #222;
+    }
+
+    .servers h2 {
+      color: #ff0000;
+      margin-bottom: 20px;
+    }
+
+    .server-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .server {
+      background: #1a1a1a;
+      padding: 15px;
+      border: 1px solid #ff0000;
+      border-radius: 10px;
+      width: 200px;
+    }
+
+    .server img {
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .server a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+    }
+
+    .server a:hover {
+      color: #ff0000;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #aaa;
+      border-top: 1px solid #222;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay" id="overlay" style="display: none;">
+    <h2>Click to continue</h2>
+    <button onclick="startSite()">Enter</button>
+  </div>
+
+  <img src="https://media.discordapp.net/attachments/1378961559841280112/1395283074488602655/188561449.png?ex=6879e220&is=687890a0&hm=d83d94b8af08b9d09433ef4db3eaf1bbbb3fa91f9a696cf65834042fd78206c1&=&format=webp&quality=lossless" alt="WANCHO" class="profile">
+  <h1>Wancho</h1>
+
+  <div class="music-info">
+    <img src="https://images-ext-1.discordapp.net/external/TQfM0OtTyXfXjtf31cmeukVtEn4DbGaR0wZpikHpky0/%3Fsize%3D4096%26ignore%3Dtrue%29./https/cdn.discordapp.com/guilds/1343905025013055489/users/1120774590445142117/avatars/3ec8aa78e405ae04941a84c2e44e308a.png?format=webp&quality=lossless" alt="music">
+    <span>All About Softshit</span>
+  </div>
+
+<head>
+  <style>
+    #typing {
+      color: red;
+    }
+  </style>
+</head>
+
+  <div class="typing" id="typing">Only vi <3 </div>
+
+  <a href="https://guns.lol/wanchoxyz" target="_blank">
+    <button class="btn">About Me?</button>
+  </a>
+
+  <div class="socials">
+    <a href="https://www.youtube.com/@Wanchohermano" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.tiktok.com/@wancholovesu" target="_blank" title="fa-tiktok"><i class="fab fa-tiktok"></i></a>
+  </div>
+
+    <div></div>
+  <style>
+
+    .image-container {
+      position: relative;
+      top: -25px; 
+      right: -60px;
+      background-color: rgba(255, 255, 255, 0.0); 
+      background-repeat: repeat;
+
+    }
+
+
+    #profileImage {
+      width: 300px; 
+      height: auto; 
+    }
+  </style>
+  </head>
+  <body>
+  <!-- Define a container for the image -->
+  <div class="image-container">
+    <!-- Define an img element with an initial source -->
+    <p1>
+      <h1>
+        <a href="https://discord.com/users/1120774590445142117" rel="nofollow" target="_blank">
+          <img id="profileImage" src="https://lanyard-profile-readme.vercel.app/api/1120774590445142117?theme=dark&amp;bg=00000000&amp;hideDiscrim=true&amp;idleMessage=%20real homies never snitch" alt="Profile Image">
+        </a>
+      </h1>
+    </p1>
+  </div>
+
+  <div class="servers">
+    <h2>Servers List</h2>
+    <div class="server-list">
+      <div class="server">
+        <img src="https://cdn.discordapp.com/attachments/1193149017731891271/1270324811373084694/FINEST.gif?ex=6879766c&is=687824ec&hm=3ae652a0dc3e945486c917e1c559c163e65f41bcc117446f1735f16ba7b8e283&" alt="FINEST">
+        <a href="https://discord.gg/m9wSG2rd" target="_blank">FINEST</a>
+      </div>
+      <div class="server">
+        <img src="https://images-ext-1.discordapp.net/external/YSMsJcc5MpX5I9feRhVeVWY4kaUSGlE1tCoM2Wv-XHc/%3Fsize%3D4096/https/cdn.discordapp.com/icons/1343905025013055489/a_46bc4ea1f7995ee0b401ea0c9f7ce65a.gif" alt="SOFTSHIT">
+        <a href="https://discord.gg/p8nDB2zF" target="_blank">SOFTSHIT</a>
+      </div>
+      <div class="server">
+        <img src="https://images-ext-1.discordapp.net/external/4gzrvzunKtfUAjKZJzuxJn999A6a1bMgSTiHdWReR4k/https/cdn.discordapp.com/icons/1320681931947507742/170f76c89b043ee09621aab2eb323c77.webp?format=webp" alt="SALAMI">
+        <a href="https://discord.gg/B8NDCMYT" target="_blank">SALAMI</a>
+      </div>
+      <div class="server">
+        <img src="https://images-ext-1.discordapp.net/external/Qu27dVZAfNcBHxOH6U_jnVQAXMM34nN7rPt32AHDqSU/%3Fsize%3D4096/https/cdn.discordapp.com/icons/1328330979705622632/fcd9dc462773c73e6f46b4ed6eecb2b7.png?format=webp&quality=lossless" alt="NOSTRA">
+        <a href="" target="_blank">NOSTRA</a>
+      </div>
+    </div>
+  </div>
+
+<audio id="backgroundsong" autoplay loop>
+        <source src="badbad - Wagwan Bolo Ft.Raf L,DIM MAC.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        var audio = document.getElementById('backgroundsong');
+
+        // Play the music when the page is clicked
+        document.body.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.play(); // Play the music on any click
+            }
+        });
+    </script>
+
+  <footer>
+    © 2025 HANAKI. FINEST, SOFTSHIT, SALAMI — ALL NEGGATIVE AFFILIATED.
+  </footer>
+
+  <script>
+    const text = "ALL ABOUT SOFTSHIT";
+    let i = 0;
+    const typing = document.getElementById("typing");
+
+// Disable right-click menu
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+}, false);
+
+// Disable F12 (DevTools)
+document.addEventListener('keydown', function(event) {
+    // F12
+    if (event.keyCode == 123) {
+        event.preventDefault();
+    }
+    // Ctrl + U
+    if ((event.ctrlKey || event.metaKey) && event.keyCode == 85) {
+        event.preventDefault();
+    }
+    // Ctrl + Shift + I (DevTools)
+    if ((event.ctrlKey || event.metaKey) && event.shiftKey && event.keyCode == 73) {
+        event.preventDefault();
+    }
+}, false);
+
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
+
+document.onkeydown = function(e) {
+    if ((e.ctrlKey || e.metaKey) && e.keyCode == 85) {
+        e.preventDefault();
+    }
+};
+
+document.addEventListener('keydown', function(event) {
+    if (event.keyCode == 123) {  // F12 key code
+        event.preventDefault();
+    }
+});
+
+
+
+      //
+
+    function typeText() {
+      if (i < text.length) {
+        typing.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeText, 100);
+      }
+    }
+
+    function startSite() {
+      document.getElementById("overlay").style.display = "none";
+      const audio = document.getElementById("bg-music");
+      audio.volume = 1;
+      audio.play().catch(e => console.log('Autoplay error:', e));
+      typeText();
+    }
+  </script>
+
+<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@x.x.x'></script>
+<!--Use latest version-->
+<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
+
+
+</body></html>
